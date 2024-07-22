@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <img src="images/banner1.jpg" alt="banner">
+            <div class="overlay"></div>
+            <div class="banner-content">
+                <h1>Playlist</h1>
+                <p>
+                    Browse our library of songs and play them directly in the app.
+                </p>
+            </div>
+        </header>
+        <main>
+            <div class="search-box">
+                <input id="search-input" type="text" placeholder="Search a song ...">
+            </div>
+            <div class="playlist">
+                <div id="song-1" class="song hidden">
+                    <p class="song-order">
+                        1
+                    </p>
+                    <img class="play-icon" src="images/play-button.png" alt="play-button">
+                    <p class="song-details">
+                        DO IT <span class="artist">Kanye West</span>
+                    </p>
+                </div>
+                <div id="song-2" class="song hidden">
+                    <p class="song-order">
+                        2
+                    </p>
+                    <img class="play-icon" src="images/play-button.png" alt="play-button">
+                    <p class="song-details">
+                        FUK SUMN <span class="artist">Kanye West</span>
+                    </p>
+                </div>
+                <div id="song-3" class="song hidden">
+                    <p class="song-order">
+                        3
+                    </p>
+                    <img class="play-icon" src="images/play-button.png" alt="play-button">
+                    <p class="song-details">
+                        CARNIVAL <span class="artist">Kanye West</span>
+                    </p> 
+                </div>
+                <div id="song-4" class="song hidden">
+                    <p class="song-order">
+                        4
+                    </p>
+                    <img class="play-icon" src="images/play-button.png" alt="play-button">
+                    <p class="song-details">
+                        Psycho Ceo <span class="artist">Yeat</span>
+                    </p> 
+                </div>
+                <div id="song-5" class="song hidden">
+                    <p class="song-order">
+                        5
+                    </p>
+                    <img class="play-icon" src="images/play-button.png" alt="play-button">
+                    <p class="song-details">
+                        Power Trip <span class="artist">Yeat</span>
+                    </p> 
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer id="music-player">
+        <div class="music-player-controls">
+            <button class="music-player-icon-previous">
+                <img src="images/previous-song.png" alt="previous-song">
+            </button>
+            <button class="music-player-play-btn" data-playing="false">
+                <div class="music-player-icon-play">
+                    <img src="images/play-button.png" alt="play">
+                </div>
+                <div class="music-player-icon-pause hidden">
+                    <img src="images/pause-button.png" alt="pause">
+                </div>
+            </button>
+            <button class="music-player-icon-next">
+                <img src="images/next-song.png" alt="next-song">
+            </button> 
+            <div class="music-player-timeline"> 
+                <span class="music-player-time player-time-current">0:0</span>
+                <div class="music-player-progress">
+                    <div class="music-player-progress-filled"></div>
+                </div>
+                <span class="music-player-time player-time-duration">0:0</span>
+            </div>
+        </div>
+        <audio src="songs/Kanye West, Ty Dolla $ign & YG - DO IT (432Hz).mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
